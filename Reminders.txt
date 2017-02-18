@@ -1,0 +1,3 @@
+for Row pictures... implement BOOTSTRAP GRID
+Take look at w3 templates (company + band)
+Take look at Bootstrap JS ref
