@@ -9,6 +9,17 @@
     position: relative;
 }
 
+#video-background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+  width:100%;
+}
+
  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
 
 #bannerpic{
@@ -21,12 +32,7 @@
   width: 100%;
 }
 
-#banner {
-    width: 100%;
-    height: 70px;
-    background-color: white;
-    transition: top 0.2s ease-in-out;
-}
+
 #HelloWorld{
   text-align: center;
   color: white;
@@ -44,12 +50,14 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: visible;;
   background-color: #333;
-
   top: 0;
   width: 100%;
 }
+.navbar .nav {
+     overflow: visible;
+ }
 
 #button {
     position:absolute;
