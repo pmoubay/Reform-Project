@@ -1,0 +1,9 @@
+.jumbotron {
+    background: url("/img/test.jpg");
+    margin-bottom: 0;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
