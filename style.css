@@ -6,6 +6,7 @@
     background-position: center;
     -webkit-background-size: cover;
     background-size: cover;
+    position: relative;
 }
 
 #banner {
@@ -24,4 +25,12 @@
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.button {
+    position:absolute;
+    bottom:20%;
+    right:45%;
+    width:10%;
+    height:5%;
 }
