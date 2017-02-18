@@ -9,11 +9,33 @@
     position: relative;
 }
 
+#bannerpic{
+  height: 300px;
+  width: 100%;
+}
+
+#bannerpic img{
+  height: 100%;
+  width: 100%;
+}
+
 #banner {
     width: 100%;
     height: 70px;
     background-color: white;
     transition: top 0.2s ease-in-out;
+}
+#HelloWorld{
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  position: absolute;
+  top:20%;
+  right:45%;
+  width:10%;
+  height:5%;
+
+
 }
 
 .navbar-inverse{
@@ -22,15 +44,64 @@
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  position: fixed;
+
   top: 0;
   width: 100%;
 }
 
-.button {
+#button {
     position:absolute;
     bottom:20%;
     right:45%;
     width:10%;
     height:5%;
+
 }
+
+/*footer*/
+#footer{
+  clear: both;
+  overflow: hidden;
+  bottom:0;
+  background-color: #032b1d;
+  padding-bottom: 20px;
+}
+#footer_content{
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+#feeds {
+    float: left;
+    width: 20%
+}
+
+#links {
+    float: left;
+    width: 40%
+}
+
+#copyright {
+    float: right;
+    width: 20%
+}
+
+#footer p {
+    color: #a5bf8d;
+}
+
+#footer h4 {
+    color: #a5bf8d;
+    font-size: 1.2em;
+    padding-top: 0;
+}
+
+#footer ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+#footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: .9em
