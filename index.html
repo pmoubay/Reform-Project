@@ -7,22 +7,32 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="content/js/jquery.min.js"></script>
     <script src="content/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script.js">
+
+    </script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+
+
+
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
-            <div class="navbar-header" style="background-color:blue">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">LOGO HERE</a>
+                <div class="small-logo-container">
+                    <a class="small-logo" href="#">LOGO HERE</a>
+                </div>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="#">Home</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
@@ -43,11 +53,23 @@
         </div>
     </nav>
 
+    <div class="container-fluid big-logo-row">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 big-logo-container">
+            <h1 class="big-logo">↧Big Logo</h1>
+          </div><!--/.col-xs-12 -->
+        </div><!--/.row -->
+      </div><!--/.container -->
+    </div><!--/.container-fluid -->
+
+
     <div class="jumbotron">
         <img src="test.jpg" alt="Fjords" style="width:100%">
         <h1>Image</h1>
         <button type="button" class="btn btn-default btn-lg" id="button"> click here </button>
-        <p><h1 id="HelloWorld">HELLO WORLD!</h2></p>
+        <p>
+            <h1 id="HelloWorld">HELLO WORLD!</h2></p>
         <video id="video-background" preload="" muted="" autoplay="" loop="">
              <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
               <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">

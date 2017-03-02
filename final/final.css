@@ -1,0 +1,89 @@
+body{background: lightgrey;}
+#main{background: white;}
+#header{padding: 2em;}
+.container-fluid{padding: 0;margin: 0; border: 0;}
+
+/*Button for page*/
+#page_btn{
+  border-radius: 2px;
+  border: 0px;
+  color: white;
+  text-shadow: none;
+  background-color: lightblue;
+}
+
+#page_btn:hover {
+  color: #ffffff;
+  background-color: #fbd1d5;
+}
+
+
+/*---Navbar---*/
+#rightMenu{ float:right;}
+/*move logo*/
+.navbar > a{padding-left:2em;}
+/*nav text color*/
+#navtext{color: black;}
+/*nabar color*/
+.navbar-custom{background-color: lightblue;}
+/*navitem spacing*/
+.navbar-nav > li{ padding-left:2em; padding-right:2em;}
+
+
+
+
+/*---Carousel---*/
+#picCarousel{padding-top: 0;padding-bottom: 2em;}
+#carousel0{background-image: url(maxresdefault.jpg);background-repeat: no-repeat;background-size: 100% 100%;}
+#carousel1{background-image: url(salad.jpg);background-repeat: no-repeat;background-size: 100% 100%;}
+#carousel2{background-image: url(jumbo.jpg);background-repeat: no-repeat;background-size: 100% 100%;}
+.carousel-item {height:50em;width: 100%;}
+.carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+    object-fit: cover;
+}
+@media (max-width: 100%) {.carousel-caption {display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */}}
+
+
+
+/*First banner*/
+#description{padding: 8em 0em 8em 0em;  text-align: center;}
+
+
+/*Card banner*/
+#cardbanner{padding:0em; text-align: center;}
+
+
+
+/* Video */
+/* Default hide the video on all devices */
+#video{display:none}
+#video{padding: 2em;  text-align: center;}
+/* Default display the image to replace the video on all devices */
+#videosubstitute{display:block;width:100%;height:20em;max-width:100%}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 0px) {
+#video{display:block}
+#videosubstitute{display:none}
+}
+#videoDiv {position: relative; width: auto%; height: 30em; overflow: hidden; }
+#videoBlock,#videoMessage {width: 100%; height: auto; position: absolute; top: 0; left: 0; background-size: cover;}
+#video{width: 100%;}
+#videoMessage {padding:0.4em; margin:0}
+#videoMessage {text-shadow: 2px 2px 2px #000000; color:white;z-index:99 }
+#videoMessag2 h1{font-size: 3em;color:#ffffff;text-align:center;}
+#videoMessage h2{font-size: 2.5em;color:#ffffff;text-align:center;}
+#videoMessage2 h3{font-size: 2.0em;color:#ffffff;text-align:center;}
+.videoClick {text-align:center}
+.videoClick a{color:white;background-color:rgba(241, 241, 241, 0.25);font-size: 1.7em;cursor:pointer;cursor:hand}
+
+
+/*footer*/
+.footer-middle{
+   background: #3d6277;
+  padding-top: 2em;
+  color: white;
+}
