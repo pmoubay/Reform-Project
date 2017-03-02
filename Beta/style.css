@@ -198,6 +198,10 @@ header .menu h1{
   text-transform: uppercase;
 }
 
+.bannerbutton:hover{
+	background-color: #696969;
+}
+
 /*-----------------------------------------------------------*/
 /* Services Container */
 
@@ -278,4 +282,8 @@ footer{
   display: inline-block;
   margin-bottom: 20px;
   background-color: rgba(169,169,169,0.2);
+}
+
+.btn-default:hover{
+	background-color: rgba(119,136,153,1);
 }

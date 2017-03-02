@@ -1,35 +1,45 @@
+
+//Variables
+var aboutusmenu = $('.aboutusmenu');
+var servicesmenu = $('.servicesmenu');
+var programsmenu = $('.programsmenu');
+
+var btnAboutUs = $('.aboutusmenubutton');
+var btnServices = $('.servicesmenubutton');
+var btnPrograms = $('.programsmenubutton');
+
 function main(){
-  //$('.submenu').hide();
-  $('.aboutusmenu').hide();
-  $('.servicesmenu').hide();
-  $('.programsmenu').hide();
+  aboutusmenu.hide();
+  servicesmenu.hide();
+  programsmenu.hide();
 
-  $('.aboutusmenubutton').on('mouseenter',function(){
+  btnAboutUs.on('click',function(){
+	if(servicesmenu.is(':visible')) servicesmenu.slideUp('slow');
+	if(programsmenu.is(':visible')) programsmenu.slideUp('slow');
     $(this).toggleClass('active');
-    $('.aboutusmenu').slideDown('slow');
+    aboutusmenu.slideToggle('slow');
   });
-  $('.aboutusmenubutton').on('mouseleave',function(){
-    $('.aboutusmenubutton').toggleClass('inactive');
-    $('.aboutusmenu').slideUp('slow');
-  });
-
-  $('.servicesmenubutton').on('mouseenter',function(){
+  
+  btnServices.on('click',function(){
+	if(aboutusmenu.is(':visible')) aboutusmenu.slideUp('slow');
+	if(programsmenu.is(':visible')) programsmenu.slideUp('slow');
     $(this).toggleClass('active');
-    $('.servicesmenu').slideDown('slow');
+    servicesmenu.slideToggle('slow');
   });
-  $('.servicesmenubutton').on('mouseleave',function(){
-      $('.servicesmenubutton').toggleClass('inactive');
-      $('.servicesmenu').slideUp('slow');
-  });
-
-  $('.programsmenubutton').on('mouseenter',function(){
+  
+  btnPrograms.on('click',function(){
+	if(servicesmenu.is(':visible')) servicesmenu.slideUp('slow');
+	if(aboutusmenu.is(':visible')) aboutusmenu.slideUp('slow');
     $(this).toggleClass('active');
-    $('.programsmenu').slideDown('slow');
+    programsmenu.slideToggle('slow');
   });
-  $('.programsmenubutton').on('mouseleave',function(){
-      $('.programsmenubutton').toggleClass('inactive');
-      $('.programsmenu').slideUp('slow');
+  
+  $('.banner').on('click',function(){
+	  if(aboutusmenu.is(':visible')) aboutusmenu.slideUp('slow');
+	  if(servicesmenu.is(':visible')) servicesmenu.slideUp('slow');
+	  if(programsmenu.is(':visible')) programsmenu.slideUp('slow');
   });
+  
 }
 
 $(document).ready(main);
