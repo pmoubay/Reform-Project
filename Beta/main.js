@@ -17,29 +17,29 @@ function main(){
 	if(servicesmenu.is(':visible')) servicesmenu.slideUp('slow');
 	if(programsmenu.is(':visible')) programsmenu.slideUp('slow');
     $(this).toggleClass('active');
-    aboutusmenu.slideToggle('slow');
+    aboutusmenu.toggle('fast');
   });
-  
+
   btnServices.on('click',function(){
 	if(aboutusmenu.is(':visible')) aboutusmenu.slideUp('slow');
 	if(programsmenu.is(':visible')) programsmenu.slideUp('slow');
     $(this).toggleClass('active');
-    servicesmenu.slideToggle('slow');
+    servicesmenu.slideToggle('fast');
   });
-  
+
   btnPrograms.on('click',function(){
 	if(servicesmenu.is(':visible')) servicesmenu.slideUp('slow');
 	if(aboutusmenu.is(':visible')) aboutusmenu.slideUp('slow');
     $(this).toggleClass('active');
-    programsmenu.slideToggle('slow');
+    programsmenu.slideToggle('fast');
   });
-  
+
   $('.banner').on('click',function(){
 	  if(aboutusmenu.is(':visible')) aboutusmenu.slideUp('slow');
 	  if(servicesmenu.is(':visible')) servicesmenu.slideUp('slow');
 	  if(programsmenu.is(':visible')) programsmenu.slideUp('slow');
   });
-  
+
 }
 
 $(document).ready(main);
