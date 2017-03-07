@@ -34,10 +34,10 @@
             <a href="#" class="logo"><h1><img src="http://reformstudios.net/wp-content/uploads/2016/11/reform-YOGA-FITNESS-logo-design-copy-1.jpg" height="40em" alt="Reform"></h1></a>
             <nav class="navbar">
                 <ul>
-                    <li><a href="#" class="aboutusmenubutton">About Us</a></li>
+                    <li><a href="AboutUs.html" class="aboutusmenubutton">About Us</a></li>
                     <li><a href="#" class="servicesmenubutton">Services</a></li>
                     <li><a href="#" class="programsmenubutton">Programs</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
                     <li><a href="#">Log In</a></li>
                     <li><a href="#">Sign up</a></li>
                 </ul>
@@ -56,7 +56,7 @@
             <div class="servicesmenu">
                 <ul>
                     <li><a href="#">Fitness</a></li>
-                    <li><a href="#">Nutrition</a></li>
+                    <li><a href="Nutrition.html">Nutrition</a></li>
                     <li><a href="#">Life Coaching</a></li>
                     <li><a href="#">Physical Therapy</a></li>
                 </ul>
@@ -76,87 +76,116 @@
             <h1>Get in touch with us</h1>
         </div>
     </section>
-    <section class="mapContainer">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2802.330620000024!2d-75.74523308444533!3d45.38250107910003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce06a28e8173f7%3A0x9055a69e0512226f!2sFlow+Pilates+Studio+%26+Fitness+by+Heather+Pugh!5e0!3m2!1sen!2sca!4v1488651254272"
-            width="1420" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <section class="container">
+      <div class="row">
+        <div id="map-canvas" style="float:left; margin-top: 2px">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2802.330620000024!2d-75.74523308444533!3d45.38250107910003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce06a28e8173f7%3A0x9055a69e0512226f!2sFlow+Pilates+Studio+%26+Fitness+by+Heather+Pugh!5e0!3m2!1sen!2sca!4v1488651254272"
+              width="800" height="375" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div id="addr" style="float: left">
+        <address id="addr">
+          <h2><b>Reform Studio and Fitness</b></h2>
+            111 Sherwood Drive <br />
+            Ottawa <br />
+            Ontario, Canada <br />
+            K1Y 3V1 <br /> <br />
+            Call us : (613) 729 8844 <br /> <br />
+            Email : info@flowpilatesstudio.com
+        </address>
+      </div>
     </section>
-    <section class="location">
-        <ul id="address">
-            <li id="studioAddress">
-                <h4><b>Reform Studio and Fitness</b></h4> 111 Sherwood Drive <br /> Ottawa <br /> Ontario, Canada <br /> K1Y 3V1 <br />
-            </li>
-            <li id="phone">
-                Call us at <br /> (613) 729 8844
-            </li>
-            <li id="email">
-                Email <br /> info@flowpilatesstudio.com
-            </li>
-        </ul>
+    <section>
+      <div id="form-main">
+          <div id="form-div">
+              <form class="form" id="form1">
+
+                  <p class="name">
+                      <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+                  </p>
+
+                  <p class="email">
+                      <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+                  </p>
+
+                  <p class="text">
+                      <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+                  </p>
+
+                  <div class="submit">
+                      <input type="submit" value="SEND" id="button-blue" />
+                      <div class="ease"></div>
+                  </div>
+              </form>
+          </div>
+      </div>
     </section>
-    <section class="feedback">
-      <h3><b>We would love you hear your feedback</b></h3>
-        <form name="htmlform" method="post" action="#" id="feedbackform">
-            <table width="500px">
-                </tr>
-                <tr>
-                    <td valign="top">
-                        <label for="first_name">First Name *</label>
-                    </td>
-                    <td valign="top">
-                        <input type="text" name="first_name" maxlength="50" size="30">
-                    </td>
-                </tr>
 
-                <tr>
-                    <td valign="top">
-                        <label for="last_name">Last Name *</label>
-                    </td>
-                    <td valign="top">
-                        <input type="text" name="last_name" maxlength="50" size="30">
-                    </td>
-                </tr>
-                <tr>
-                    <td valign="top">
-                        <label for="email">Email Address *</label>
-                    </td>
-                    <td valign="top">
-                        <input type="text" name="email" maxlength="80" size="30">
-                    </td>
-
-                </tr>
-                <tr>
-                    <td valign="top">
-                        <label for="telephone">Telephone Number</label>
-                    </td>
-                    <td valign="top">
-                        <input type="text" name="telephone" maxlength="30" size="30">
-                    </td>
-                </tr>
-                <tr>
-                    <td valign="top">
-                        <label for="comments">Comments *</label>
-                    </td>
-                    <td valign="top">
-                        <textarea name="comments" maxlength="1000" cols="25" rows="6"></textarea>
-                    </td>
-
-                </tr>
-                <tr>
-                    <td colspan="2" style="text-align:center">
-                        <input type="submit" value="Submit">
-                    </td>
-                </tr>
-            </table>
-        </form>
-
-    </section>
     <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
     <script src='AboutUs.js'></script>
+    <script src='ContactUs.js'></script>
 </body>
-<footer>
-    <div>
-        <p>&copy; 2017 Reform</p>
-    </div>
-</footer>
+<!--
+<footer class="footer-distributed">
 
+  <div class="footer-left">
+
+    <h3>Company<span>logo</span></h3>
+
+    <p class="footer-links">
+      <a href="#">Home</a>
+      ·
+      <a href="#">Blog</a>
+      ·
+      <a href="#">Pricing</a>
+      ·
+      <a href="#">About</a>
+      ·
+      <a href="#">Faq</a>
+      ·
+      <a href="#">Contact</a>
+    </p>
+
+    <p class="footer-company-name">Company Name &copy; 2015</p>
+  </div>
+
+  <div class="footer-center">
+
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span>21 Revolution Street</span> Paris, France</p>
+    </div>
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>+1 555 123456</p>
+    </div>
+
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:support@company.com">support@company.com</a></p>
+    </div>
+
+  </div>
+
+  <div class="footer-right">
+
+    <p class="footer-company-about">
+      <span>About the company</span>
+      Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+    </p>
+
+    <div class="footer-icons">
+
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+
+    </div>
+
+  </div>
+
+</footer>
+-->
 </html>
