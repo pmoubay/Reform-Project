@@ -208,6 +208,7 @@ header .menu h1{
 .image4, .image5{
 	position: relative;
 	z-index: -1;
+  display: inline-block;
 }
 
 .image4 img, .image5 img{
