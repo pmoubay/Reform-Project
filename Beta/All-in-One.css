@@ -1,0 +1,622 @@
+
+/* Webpage Container */
+body {
+    font-family: 'Raleway', Helvetica, sans-serif;
+    background: #EEEFF1;
+}
+
+
+/*-----------------------------------------------------------*/
+
+
+/* Header Container */
+
+header {
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header, .mainmenu, .mainmenu a, .mainmenu ul, .mainmenu li, .mainmenu div, .mainmenu form, .mainmenu input {
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+  }
+
+
+  /*header, nav, div, li, ul{
+    border: 0.5px solid red;
+    border-radius: 1em;
+  }*/
+
+
+/*-----------------------------------------------------------*/
+/* Logo Container */
+
+header .logo {
+    position: fixed;
+    float: left;
+    z-index: 700;
+
+    height: 5em;
+    width: 10em;
+    background-color: #fff;
+
+    padding-left: 3em;
+    padding-top: 0.5em;
+    border-radius: 1em;
+}
+
+
+
+/*-----------------------------------------------------------*/
+
+
+/* Social Container */
+
+header .social {
+    background-color: #fff;
+    top: 0px;
+    left: 0px;
+    right: 2px;
+    width: 100%;
+    height: 4em;
+    display: inline-flex;
+    justify-content: flex-end;
+    font-size: 0.6em;
+    border-bottom: 1px dashed #d3d3d3;
+}
+
+header .social li, header .social a {
+    color: #000;
+    font-weight: 100;
+    display: inline-block;
+    font-size: 1em;
+    letter-spacing: 0.03em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+
+/*-----------------------------------------------------------*/
+/* Menu Container */
+
+.menu {
+    background-color: #fff;
+    border-bottom: 1px solid #d3d3d3;
+    font-size: 1.1em;
+
+  	position: fixed;
+  	left: 0;
+  	right: 0;
+    top: 2.1em;
+
+    width: 100%;
+    height: 3em;
+
+    display: inline-block;
+    float: right;
+}
+
+
+.menu li {
+    color: #000000;
+    font-weight: 100;
+    display: inline-block;
+
+    letter-spacing: 0.03em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    padding: 0.5em;
+}
+
+.menu a {
+    color: #000000;
+}
+
+.menu a:hover {
+  color: #808080;
+}
+
+
+/*-----------------------------------------------------------*/
+/* FIRST LEVEL */
+
+
+.mainmenu {
+  position: relative;
+  top: 100%;
+	width: 100%;
+
+  cursor: default;
+  padding-top: 0.5em;
+
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.mainmenu li{
+  display: block;
+    float: left;
+}
+
+.mainmenu li a{
+    display: block;
+}
+
+.mainmenu div{
+  margin: auto;
+}
+
+
+
+/* SECOND LEVEL */
+
+.submenu {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  background: #fff;
+  border-bottom: 1px solid #d3d3d3;
+
+  display: inline-flex;
+	justify-content: center;
+
+  -webkit-transition: all .3s ease .15s;
+  -moz-transition: all .3s ease .15s;
+  -o-transition: all .3s ease .15s;
+  -ms-transition: all .3s ease .15s;
+  transition: all .3s ease .15s;
+}
+
+
+.submenu li{
+  margin: 0.5em;
+}
+
+
+/* Responsive Small Screen Menu*/
+
+@media screen and (max-width: 880px) {
+    #menu {
+        width: 2em;
+        height: 1.5em;
+        display: block;
+        border: 0.05em solid #d3d3d3;
+        border-radius: 0.25em;
+        font-size: 2em;
+        text-align: center;
+        float: right;
+    }
+    .mainmenu.js {
+        display: none;
+    }
+    .mainmenu {
+        top: 3.1em;
+        width: 100%;
+        display: block;
+        background-color: #fff;
+    }
+    .mainmenu li, .submenu li {
+      float: none;
+      width: 100%;
+      display: block;
+    }
+
+    .submenu{
+      position: relative;
+      visibility: visible;
+      opacity: 1;
+      overflow: visible;
+      display: none;
+    }
+}
+
+@media screen and (min-width: 880px) {
+    #menu {
+        display: none;
+    }
+
+    .mainmenu li:hover .submenu {
+        visibility: visible;
+        opacity: 1;
+        overflow: visible;
+    }
+
+}
+
+/* Banner Container */
+
+.banner {
+    margin-top: 7em;
+    background: url(https://www.lagreefitness.com/uploads/slike_slider/4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background: relative;
+    height: 500px;
+}
+
+.bannertext{
+  position: relative;
+  top: 100px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+.bannertext h1{
+  color: #fff;
+  font-size: 7em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.bannertext h2{
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+}
+
+.bannerbutton{
+  background-color: #333;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  padding: 16px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  z-index: -1;
+}
+
+/**** ABOUT US WEBPAGE STYLES ****/
+
+.ourStoryImage {
+  background:linear-gradient(to left, rgba(6, 28, 2, 0.4), rgb(25, 22, 84)), url(https://s-media-cache-ak0.pinimg.com/originals/82/f3/eb/82f3eb09e2b7ca0ca1611a05eb497238.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 700px;
+  overflow: hidden;
+}
+#storyText h1{
+  color: #fff;
+  font-size: 7em;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+#storyText h2{
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 4em;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+  text-align: center;
+}
+/********Our Philosophy***********/
+.ourPhilosophyImage {
+  background:linear-gradient(to right, rgba(67, 2, 0, 0.4), rgb(25, 22, 84)), url(https://selflovewarrior.files.wordpress.com/2013/01/believe-in-yourself-218323.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 700px;
+  overflow: hidden;
+}
+#philosophyText h1{
+  color: #fff;
+  font-size: 7em;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+/********Our Team***********/
+
+#ourTeamImage {
+  background:linear-gradient(to top, rgba(6, 28, 2, 0.4), rgb(25, 22, 84));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+#ourTeamImage h4{
+  color: #fff;
+  font-size: 2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+#ourTeamImage h5{
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.teammemberscaption p {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  width: 50%;
+  text-align: left;
+}
+
+/**** NUTRITION WEBPAGE STYLES ****/
+
+/********Image Grid**********/
+
+.thumbnail img{
+  z-index: -1;
+}
+
+#imageheading1, #imageheading2{
+  text-align: center;
+  text-indent: 2px;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.image4, .image5{
+	position: relative;
+	z-index: -1;
+  display: inline-block;
+}
+
+.image4 img, .image5 img{
+	height: 500px;
+	max-width: 100%;
+}
+
+#img-btn1, #img-btn2{
+
+	position: absolute;
+	bottom:255px;
+  right:280px;
+  width:auto;
+}
+
+#img-btn1 a, #img-btn2 a{
+  text-decoration: none;
+  color: #fff;
+
+}
+
+/**** LIFE COACHING WEBPAGE STYLES ****/
+/**** Life Coaching Page Banner ****/
+.page-bannerLC {
+  background-image: url('https://dennymeyer.files.wordpress.com/2014/06/breathe.jpg');
+  margin-top: 4em;
+  margin-left: 0;
+  width: auto;
+  height: 700px;
+  position: relative;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.contentLC h2 {
+  color: brown;
+}
+.contentLC p{
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 1.0em;
+}
+
+#btnLC {
+  align-content: center;
+  position: absolute;
+}
+
+#testimage1, #testimage2, #testimage3, #testimage4 {
+  box-sizing: content-box;
+  background: linear-gradient(to left, #eacda3 , #d6ae7b);
+  z-index: -1;
+  position: relative;
+}
+
+#testimonials h1 {
+  font-size: 8em;
+  text-shadow: 2px 2px grey;
+  z-index: -1;
+}
+
+#testimage1 h3, #testimage2 h3, #testimage3 h3, #testimage4 h3 {
+  text-align: center;
+  text-shadow: 1px 1px #000;
+}
+
+#toprograms p{
+  font-size: 2em;
+  text-align: center;
+}
+
+/**** FOOTER SECTION CSS ****/
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
