@@ -15,6 +15,7 @@ header {
     left: 0;
     width: 100%;
     position: fixed;
+    z-index: 1000;
 }
 
 header a {
@@ -209,6 +210,12 @@ header .social li, header .social a {
       overflow: visible;
       display: none;
     }
+
+    .bannertext{
+      left:0;
+    }
+
+
 }
 
 @media screen and (min-width: 880px) {
@@ -395,6 +402,174 @@ header .social li, header .social a {
 
 	margin-right: 3px;
 	margin-bottom: 5px;
+}
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+
+/* Banner Container */
+.banner {
+    margin-top: 7em;
+    background: url(https://www.lagreefitness.com/uploads/slike_slider/4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background: relative;
+    height: 500px;
+}
+
+.bannertext {
+    position: absolute;
+    text-align: center;
+    left:20%;
+    top:20%;
+    bottom: 20%;
+}
+
+.bannertext h1 {
+    color: #fff;
+    font-size: 7em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.bannertext h2 {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+}
+
+.bannerbutton {
+    background-color: #333;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    padding: 16px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.bannerbutton:hover {
+    background-color: #696969;
+}
+
+
+/*-----------------------------------------------------------*/
+
+
+/* Services Container */
+
+.services {
+    width: 100%;
+    text-align: center;
+}
+
+figure {
+    padding-left: 2em;
+    width: 30em;
+    display: inline-block;
+    color: #fff;
+    text-align: left;
+    overflow: hidden;
+    height: 300px;
+    margin: .5em;
+}
+
+figure h2 {
+    text-shadow: 1px 1px 3px #000;
+    text-transform: uppercase;
+    font-weight: 1000;
+    margin-bottom: 150px;
+}
+
+figure p {
+    text-shadow: 1px 1px 5px #000;
+}
+
+.servicetitle {
+    top: 50px;
+}
+
+.servicedescription {}
+
+#fitness {
+    background: url(http://www.magic4walls.com/wp-content/uploads/2015/06/Young-Woman-stretching-hamstring-legs-exercise-training-fitness-694x417.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#nutrition {
+    background: url(http://cdn29.us1.fansshare.com/images/vegan/vegan-healthy-hd-wallpapers-download-people-1406460549.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#lifecoach {
+    background: url(http://cdn.paper4pc.com/images/mountain-top-wallpaper-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#physio {
+    background: url(http://www.asiqual.com/wp-content/uploads/2013/04/sunset-run.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+
+/*************************************************************/
+
+
+/*Description*/
+
+.description {
+    padding: 4em 0em 4em 0em;
+    text-align: center;
+}
+
+
+/*************************************************************/
+
+
+/*Promobanner*/
+
+#promo1 {
+    margin-top: .5em  ;
+    background: url(http://www.asiqual.com/wp-content/uploads/2013/04/sunset-run.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;;
+    position: relative;
+}
+
+#promo1 .bannertext{
+  text-align: left;
+  position: absolute;
+  left: 5em;
+  bottom: 4em;
+}
+
+#promo2 {
+    margin-top: .5em  ;
+    background: url((http://cdn.paper4pc.com/images/mountain-top-wallpaper-1.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+}
+
+#promo2 .bannertext{
+  text-align: right;
+  position: absolute;
+  right:5em;
+  top: 2em;
 }
 
 /*-----------------------------------------------------------*/
