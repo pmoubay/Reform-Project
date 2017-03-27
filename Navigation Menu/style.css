@@ -223,3 +223,178 @@ header .social li, header .social a {
     }
 
 }
+
+
+/*-----------------------------------------------------------*/
+/* Footer Container */
+
+.footer-distributed{
+	background-color: #fff;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font-size: 16px;
+  font-weight: bold;
+  font-family: 'Roboto', Helvetica, sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #292c2f;
+	font-size: 36px;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #292c2f;
+	margin: 20px 0 12px;
+	padding: 0;
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+.footer-distributed .footer-center .fa-title{
+  margin: 0;
+  padding: 0;
+  padding-top: 1em;
+  height: 2em;
+
+  display: block;
+  color:  #292c2f;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+.footer-distributed .footer-center i{
+	margin-left: 15px;
+  margin-top: 0;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+}
+
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #292c2f;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;
+  font-size:14px;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-right .fa-cover{
+	height: 38px;
+	margin-left: 15px;
+  margin-top: 0;
+}
+
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #292c2f;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 10px;
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 1.75em;
+	height: 1.75em;
+	cursor: pointer;
+	background-color:  #ffffff;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #292c2f;
+	text-align: right;
+  vertical-align: bottom;
+	line-height: 35px;
+  bottom: 0;
+  right: 0;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/*-----------------------------------------------------------*/
