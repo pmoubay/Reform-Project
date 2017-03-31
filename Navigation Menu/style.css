@@ -211,8 +211,10 @@ header .social li, header .social a {
       display: none;
     }
 
-    .bannertext{
-      left:0;
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+      min-width: 100%;
     }
 
 
@@ -247,6 +249,8 @@ header .social li, header .social a {
 
 	padding: 55px 50px;
 	margin-top: 80px;
+
+  display: inline-block;
 }
 
 .footer-distributed .footer-left,
@@ -281,6 +285,7 @@ header .social li, header .social a {
 	margin: 20px 0 12px;
 	padding: 0;
   font-family: 'Raleway', Helvetica, sans-serif;
+  display: inline-block;
 }
 
 .footer-distributed .footer-links a{
@@ -409,21 +414,30 @@ header .social li, header .social a {
 
 /* Banner Container */
 .banner {
-    margin-top: 7em;
-    background: url(https://www.lagreefitness.com/uploads/slike_slider/4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    background: relative;
-    height: 500px;
+  background: relative;
+  height: 500px;
+  text-shadow: 1px 1px #000;
+  margin-bottom: 2em;
+}
+
+#jumbotron{
+  margin-top: 7em;
+  background: url(https://www.lagreefitness.com/uploads/slike_slider/4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#jumbotron .bannertext{
+  bottom: 3em;
 }
 
 .bannertext {
     position: absolute;
     text-align: center;
     left:20%;
-    top:20%;
-    bottom: 20%;
+    right: 20%;
+    bottom: 15%;
 }
 
 .bannertext h1 {
@@ -458,15 +472,45 @@ header .social li, header .social a {
     background-color: #696969;
 }
 
+/*************************************************************/
+/*Promobanner*/
+
+#promo1 {
+    background: url(http://www.asiqual.com/wp-content/uploads/2013/04/sunset-run.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+}
+
+#promo1 .bannertext{
+  text-align: right;
+  right: 5em;
+}
+
+#promo2 {
+    margin-top: .5em  ;
+    background: url(http://cdn.paper4pc.com/images/mountain-top-wallpaper-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+}
+
+#promo2 .bannertext{
+  text-align: left;
+  position: absolute;
+  left:5em;
+}
+
 
 /*-----------------------------------------------------------*/
-
-
 /* Services Container */
 
 .services {
     width: 100%;
     text-align: center;
+    margin-bottom: 2em;
 }
 
 figure {
@@ -476,7 +520,7 @@ figure {
     color: #fff;
     text-align: left;
     overflow: hidden;
-    height: 300px;
+    height: 230px;
     margin: .5em;
 }
 
@@ -484,7 +528,7 @@ figure h2 {
     text-shadow: 1px 1px 3px #000;
     text-transform: uppercase;
     font-weight: 1000;
-    margin-bottom: 150px;
+    margin-bottom: 70px;
 }
 
 figure p {
@@ -527,49 +571,54 @@ figure p {
 
 
 /*************************************************************/
-
-
 /*Description*/
 
 .description {
-    padding: 4em 0em 4em 0em;
+    padding: 5em 10% 7em 10%;
     text-align: center;
+    font-weight: 200;
+}
+
+.description h3{
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.5em;
+}
+
+.description h4{
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 1.5em;
+}
+
+.description p{
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 1.3em;
+  margin-bottom: 2em;
+  letter-spacing: 0.05em;
 }
 
 
-/*************************************************************/
 
-
-/*Promobanner*/
-
-#promo1 {
-    margin-top: .5em  ;
-    background: url(http://www.asiqual.com/wp-content/uploads/2013/04/sunset-run.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom;;
-    position: relative;
-}
-
-#promo1 .bannertext{
-  text-align: left;
-  position: absolute;
-  left: 5em;
-  bottom: 4em;
-}
-
-#promo2 {
-    margin-top: .5em  ;
-    background: url((http://cdn.paper4pc.com/images/mountain-top-wallpaper-1.jpg);
-    background-repeat: no-repeat;
-    background-position: top;
-    position: relative;
-}
-
-#promo2 .bannertext{
-  text-align: right;
-  position: absolute;
-  right:5em;
-  top: 2em;
-}
 
 /*-----------------------------------------------------------*/
+/* Default Button */
+
+.btn-default {
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 1.3px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: rgba(169, 169, 169, 0.2);
+}
+
+.btn-default:hover {
+    background-color: rgba(119, 136, 153, 1);
+}
