@@ -211,12 +211,6 @@ header .social li, header .social a {
       display: none;
     }
 
-    .footer-distributed .footer-left,
-    .footer-distributed .footer-center,
-    .footer-distributed .footer-right {
-      min-width: 100%;
-    }
-
 
 }
 
@@ -409,6 +403,37 @@ header .social li, header .social a {
 	margin-bottom: 5px;
 }
 
+/*Responsive Footer */
+@media screen and (max-width: 880px) {
+      .footer-distributed .footer-left,
+      .footer-distributed .footer-center,
+      .footer-distributed .footer-right {
+        min-width: 100%;
+      }
+}
+
+/*-----------------------------------------------------------*/
+/* Default Button */
+
+.btn-default {
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 1.3px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: rgba(169, 169, 169, 0.2);
+}
+
+.btn-default:hover {
+    background-color: rgba(119, 136, 153, 1);
+}
+
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
 
@@ -426,6 +451,7 @@ header .social li, header .social a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  position: relative;
 }
 
 #jumbotron .bannertext{
@@ -535,11 +561,6 @@ figure p {
     text-shadow: 1px 1px 5px #000;
 }
 
-.servicetitle {
-    top: 50px;
-}
-
-.servicedescription {}
 
 #fitness {
     background: url(http://www.magic4walls.com/wp-content/uploads/2015/06/Young-Woman-stretching-hamstring-legs-exercise-training-fitness-694x417.jpg);
@@ -574,7 +595,10 @@ figure p {
 /*Description*/
 
 .description {
-    padding: 5em 10% 7em 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5em;
+    padding-top: 1em;
     text-align: center;
     font-weight: 200;
 }
@@ -598,27 +622,134 @@ figure p {
   letter-spacing: 0.05em;
 }
 
-
+#generic{
+  padding-top: 5em;
+  padding-bottom: 7em;
+}
 
 
 /*-----------------------------------------------------------*/
-/* Default Button */
+/*-----------------------------------------------------------*/
+/* About Us Page */
 
-.btn-default {
-    border: 1px solid #fff;
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 10px;
-    letter-spacing: 1.3px;
-    padding: 10px 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 20px;
-    background-color: rgba(169, 169, 169, 0.2);
+#ourStory{
+  margin-top: 7em;
+  background: url(https://elevateyoga.ca/wp-content/uploads/2016/03/learnfrombest-home.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
 }
 
-.btn-default:hover {
-    background-color: rgba(119, 136, 153, 1);
+#ourStory .bannertext{
+  left: 10%;
+  right: 10%;
+  bottom: 20%;
+}
+
+#ourPhilosophy {
+  background: url(https://elevateyoga.ca/wp-content/uploads/2016/03/elevateyourpractice-home.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+}
+
+#ourPhilosophy .bannertext{
+  left: 10%;
+  right: 10%;
+  bottom: 20%;
+}
+
+#ourTeam{
+  background: url(https://elevateyoga.ca/wp-content/uploads/2016/03/image-quote-pushup.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+}
+
+#ourTeam .bannertext{
+  left: 10%;
+  right: 10%;
+  bottom: 20%;
+}
+
+#ourStoryDescription{
+  text-align: justify;
+}
+
+#ourStoryDescription p{
+  margin-bottom: 0;
+}
+
+#ourStoryDescription li{
+  margin-left: 3em;
+}
+
+.teamInfo{
+  display: block;
+}
+
+.teamInfo .row{
+  background-color: #fff;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+  margin: 1em;
+  padding: 1em;
+  display: inline-flex;
+}
+
+
+.teamInfo .row .thumbnail {
+  max-width: 15%;
+  margin: 1em;
+}
+
+.teamInfo .row .thumbnail img{
+  max-width: 100%;
+  margin-top: 20%;
+}
+
+.teamInfo .row .caption{
+  text-align: justify;
+  max-width: 80%;
+  margin: 1em;
+}
+
+.teamInfo .row .caption h3{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.teamInfo .row .caption h4{
+  margin-top: 0.1em;
+  padding-top: 0.1em;
+}
+
+.teamInfo .row .caption p{
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+
+/*Responsive Info */
+@media screen and (max-width: 880px) {
+  .teamInfo .row{
+    display: block;
+  }
+
+  .teamInfo .row .thumbnail,
+  .teamInfo .row .caption {
+    max-width: 100%;
+  }
+  .teamInfo .row .thumbnail img{
+    margin-top: 0%;
+  }
+
+  #ourStory .bannertext,
+  #ourPhilosophy .bannertext,
+  #ourTeam .bannertext{
+    bottom: 0;
+  }
 }
