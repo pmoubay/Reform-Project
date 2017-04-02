@@ -4,188 +4,199 @@
 <head>
     <meta charset="utf-8">
     <title>Reform</title>
-    <link rel="stylesheet" type="text/css" href="ContactUs.css" />
+    <link rel="stylesheet" type="text/css" href="All-in-One.css" />
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto:300,400,700'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400, 600">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
+      <a href="#" class="logo"><h1><img src="http://reformstudios.net/wp-content/uploads/2016/11/reform-YOGA-FITNESS-logo-design-copy-1.jpg" height="40em" alt="Reform"></h1></a>
+
         <!-- Social Media Banner -->
         <div class="social">
             <ul>
                 <li>
-                    <a href="#"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg" height="20em" alt="fb"></li>
-                </a>
+                    <a href="#"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg" height="20em" alt="fb"></a>
+                </li>
                 <li>
-                    <a href="#"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg" height="20em" alt="ig"></li>
-                </a>
+                    <a href="#"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg" height="20em" alt="ig"></a>
+                </li>
                 <li>
-                    <a href="#"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg" height="20em" alt="twtr"></li>
-                </a>
+                    <a href="#"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg" height="20em" alt="twtr"></a>
+                </li>
                 <li>
-                    <a href="#"><img src="https://s-media-cache-ak0.pinimg.com/originals/91/1c/3d/911c3d4c090a73996d025283cfd37adc.png" height="20em" alt="pin"></li>
-                </a>
+                    <a href="#"><img src="https://s-media-cache-ak0.pinimg.com/originals/91/1c/3d/911c3d4c090a73996d025283cfd37adc.png" height="20em" alt="pin"></a>
+                </li>
             </ul>
         </div>
-
-        <!-- Navigation Menu -->
-        <div class="menu">
-            <a href="#" class="logo"><h1><img src="http://reformstudios.net/wp-content/uploads/2016/11/reform-YOGA-FITNESS-logo-design-copy-1.jpg" height="40em" alt="Reform"></h1></a>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="AboutUs.html" class="aboutusmenubutton">About Us</a></li>
-                    <li><a href="#" class="servicesmenubutton">Services</a></li>
-                    <li><a href="#" class="programsmenubutton">Programs</a></li>
-                    <li><a href="ContactUs.html">Contact Us</a></li>
-                    <li><a href="#">Log In</a></li>
-                    <li><a href="#">Sign up</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <!-- Navigation Submenu -->
-        <div class="submenu">
-            <div class="aboutusmenu">
-                <ul>
-                    <li><a href="AboutUs.html">Our Story</a></li>
-                    <li><a href="AboutUs.html">Our Philosophy</a></li>
-                    <li><a href="AboutUs.html">Our Coaches</a></li>
-                </ul>
-            </div>
-            <div class="servicesmenu">
-                <ul>
-                    <li><a href="#">Fitness</a></li>
-                    <li><a href="Nutrition.html">Nutrition</a></li>
-                    <li><a href="#">Life Coaching</a></li>
-                    <li><a href="#">Physical Therapy</a></li>
-                </ul>
-            </div>
-            <div class="programsmenu">
-                <ul>
-                    <li><a href="#">Program 1</a></li>
-                    <li><a href="#">Program 2</a></li>
-                    <li><a href="#">Program 3</a></li>
-                    <li><a href="#">Program 4</a></li>
-                </ul>
-            </div>
-        </div>
+      <!-- Navigation Menu -->
+          <div class="menu">
+              <nav class="navbar">
+                  <ul class="mainmenu">
+                      <li>
+                          <a href="AboutUs.html" class="aboutusmenubutton">About Us</a>
+                          <div class="submenu" id="aboutusmenu">
+                              <ul>
+                                  <li><a href="#storyText">Our Story</a></li>
+                                  <li><a href="#philosophyText">Our Philosophy</a></li>
+                                  <li><a href="#ourTeamImage">Our Coaches</a></li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li>
+                          <a href="#" class="servicesmenubutton">Services</a>
+                          <div class="submenu" id="servicesmenu">
+                              <ul>
+                                  <li><a href="#">Fitness</a></li>
+                                  <li><a href="Nutrition.html">Nutrition</a></li>
+                                  <li><a href="LifeCoaching.html">Life Coaching</a></li>
+                                  <li><a href="#">Physical Therapy</a></li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li>
+                          <a href="#" class="programsmenubutton">Programs</a>
+                          <div class="submenu" id="programsmenu">
+                              <ul>
+                                  <li><a href="#">Program 1</a></li>
+                                  <li><a href="#">Program 2</a></li>
+                                  <li><a href="#">Program 3</a></li>
+                                  <li><a href="#">Program 4</a></li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li><a href="ContactUs.html">Contact Us</a></li>
+                      <li><a href="#">Log In</a></li>
+                      <li><a href="#">Sign up</a></li>
+                  </ul>
+              </nav>
+          </div>
     </header>
+
     <section class="banner">
         <div class="bannertext">
             <h1>Get in touch with us</h1>
         </div>
     </section>
+
     <section class="container">
       <div class="row">
-        <div id="map-canvas" style="float:left; margin-top: 2px">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2802.330620000024!2d-75.74523308444533!3d45.38250107910003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce06a28e8173f7%3A0x9055a69e0512226f!2sFlow+Pilates+Studio+%26+Fitness+by+Heather+Pugh!5e0!3m2!1sen!2sca!4v1488651254272"
-              width="800" height="375" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div id="addr" style="float: left">
-        <address id="addr">
-          <h2><b>Reform Studio and Fitness</b></h2>
-            111 Sherwood Drive <br />
-            Ottawa <br />
-            Ontario, Canada <br />
-            K1Y 3V1 <br /> <br />
-            Call us : (613) 729 8844 <br /> <br />
-            Email : info@flowpilatesstudio.com
-        </address>
-      </div>
-    </section>
-    <section>
-      <div id="form-main">
-          <div id="form-div">
-              <form class="form" id="form1">
-
-                  <p class="name">
-                      <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
-                  </p>
-
-                  <p class="email">
-                      <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
-                  </p>
-
-                  <p class="text">
-                      <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
-                  </p>
-
-                  <div class="submit">
-                      <input type="submit" value="SEND" id="button-blue" />
-                      <div class="ease"></div>
+          <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="http://adizes.by/wp-content/uploads/2011/10/marker-location-address_318-28457.jpg" />
+                  <div class="caption">
+                      <p style="text-align:center">111 Sherwood Drive <br />
+                      Ottawa <br />
+                      Ontario, Canada <br />
+                      K1Y 3V1 <br /> <br />
                   </div>
-              </form>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="thumbnail">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNS8ZUTeV1OS90zkIJjW9mdGroXTdJ89sKrSAmuG42V2NpMGLakQ"/>
+                  <div class="caption">
+                      <p style="text-align:center">Call us at <br />(613) 729 8844
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="thumbnail">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/High-contrast-mail-mark-unread.svg/120px-High-contrast-mail-mark-unread.svg.png" />
+                  <div class="caption">
+                      <p style="text-align:center">Write to us <br />
+                        info@flowpilatesstudio.com</p>
+                  </div>
+              </div>
           </div>
       </div>
     </section>
 
+    <section class="jumbotron-fluid">
+      <div class="row">
+        <div id="map-canvas">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2802.330620000024!2d-75.74523308444533!3d45.38250107910003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce06a28e8173f7%3A0x9055a69e0512226f!2sFlow+Pilates+Studio+%26+Fitness+by+Heather+Pugh!5e0!3m2!1sen!2sca!4v1488651254272"
+              width="1370" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <div id="form-message">
+
+    </div>
+
+    <form id="ajax-feedback" method="post" action="Mail.php">
+      <p style="text-align:center; font-size: 4em; color:#2F4F4F; text-shadow: 1px 1px 5px #000">
+        FEEDBACK
+      </p>
+      <div class="field">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="field">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div class="field">
+        <button type="submit">Send</button>
+      </div>
+    </form>
+
     <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
-    <script src='AboutUs.js'></script>
-    <script src='ContactUs.js'></script>
+    <script src='All-in-oneScript.js'></script>
+    <script src='Referesh.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="jquery-2.1.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
-<!--
+<!-- Footer -->
 <footer class="footer-distributed">
-
   <div class="footer-left">
-
     <h3>Company<span>logo</span></h3>
-
     <p class="footer-links">
       <a href="#">Home</a>
-      ·
       <a href="#">Blog</a>
-      ·
       <a href="#">Pricing</a>
-      ·
       <a href="#">About</a>
-      ·
       <a href="#">Faq</a>
-      ·
       <a href="#">Contact</a>
     </p>
-
     <p class="footer-company-name">Company Name &copy; 2015</p>
   </div>
-
   <div class="footer-center">
-
     <div>
       <i class="fa fa-map-marker"></i>
       <p><span>21 Revolution Street</span> Paris, France</p>
     </div>
-
     <div>
       <i class="fa fa-phone"></i>
       <p>+1 555 123456</p>
     </div>
-
     <div>
       <i class="fa fa-envelope"></i>
       <p><a href="mailto:support@company.com">support@company.com</a></p>
     </div>
-
   </div>
-
   <div class="footer-right">
-
     <p class="footer-company-about">
       <span>About the company</span>
       Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
     </p>
-
     <div class="footer-icons">
-
       <a href="#"><i class="fa fa-facebook"></i></a>
       <a href="#"><i class="fa fa-twitter"></i></a>
       <a href="#"><i class="fa fa-linkedin"></i></a>
       <a href="#"><i class="fa fa-github"></i></a>
-
     </div>
-
   </div>
-
 </footer>
--->
 </html>

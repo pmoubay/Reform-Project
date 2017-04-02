@@ -1,49 +1,31 @@
-$(document).ready(main);
+$(document).ready(function() {
 
-  var aboutusmenu = $('.aboutusmenu');
-  var servicesmenu = $('.servicesmenu');
-  var programsmenu = $('.programsmenu');
+    $(".mainmenu").addClass("js").before('<div id="menu">&#9776;</div>');
+    $("#menu").click(function() {
+        $(".mainmenu").toggle();
+    });
 
-  var btnAboutUs = $('.aboutusmenubutton');
-  var btnServices = $('.servicesmenubutton');
-  var btnPrograms = $('.programsmenubutton');
+    $(window).resize(function() {
+        if (window.innerWidth > 880) {
+            $(".mainmenu").removeAttr("style");
+            $(".submenu").removeAttr("style");
+        }
 
-function main(){
-
-
-  aboutusmenu.hide();
-  servicesmenu.hide();
-  programsmenu.hide();
-
-  btnAboutUs.on('click',function(){
-	if(servicesmenu.is(':visible')) servicesmenu.slideUp('slow');
-	if(programsmenu.is(':visible')) programsmenu.slideUp('slow');
-    $(this).toggleClass('active');
-    aboutusmenu.toggle('fast');
+        if (window.innerWidth < 880) {
+            $(".aboutusmenubutton").click(function() {
+                $("#aboutusmenu").toggle();
+            });
+            $(".servicesmenubutton").click(function() {
+                $("#servicesmenu").toggle();
+            });
+            $(".programsmenubutton").click(function() {
+                $("#programsmenu").toggle();
+            });
+        }
+    });
   });
 
-  btnServices.on('click',function(){
-	if(aboutusmenu.is(':visible')) aboutusmenu.slideUp('slow');
-	if(programsmenu.is(':visible')) programsmenu.slideUp('slow');
-    $(this).toggleClass('active');
-    servicesmenu.slideToggle('fast');
-  });
-
-  btnPrograms.on('click',function(){
-	if(servicesmenu.is(':visible')) servicesmenu.slideUp('slow');
-	if(aboutusmenu.is(':visible')) aboutusmenu.slideUp('slow');
-    $(this).toggleClass('active');
-    programsmenu.slideToggle('fast');
-  });
-
-  $('.banner').on('click',function(){
-	  if(aboutusmenu.is(':visible')) aboutusmenu.slideUp('slow');
-	  if(servicesmenu.is(':visible')) servicesmenu.slideUp('slow');
-	  if(programsmenu.is(':visible')) programsmenu.slideUp('slow');
-  });
-
-
-  $(function() {
+$(document).ready(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -57,4 +39,3 @@ function main(){
     }
   });
 });
-}
