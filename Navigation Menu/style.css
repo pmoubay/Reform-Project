@@ -562,28 +562,28 @@ figure p {
 }
 
 
-#fitness {
+.services #fitness {
     background: url(http://www.magic4walls.com/wp-content/uploads/2015/06/Young-Woman-stretching-hamstring-legs-exercise-training-fitness-694x417.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
 }
 
-#nutrition {
+.services #nutrition {
     background: url(http://cdn29.us1.fansshare.com/images/vegan/vegan-healthy-hd-wallpapers-download-people-1406460549.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
 }
 
-#lifecoach {
+.services #lifecoach {
     background: url(http://cdn.paper4pc.com/images/mountain-top-wallpaper-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
 }
 
-#physio {
+.services #physio {
     background: url(http://www.asiqual.com/wp-content/uploads/2013/04/sunset-run.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -752,4 +752,93 @@ figure p {
   #ourTeam .bannertext{
     bottom: 0;
   }
+}
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/* Services Page */
+
+#reformServices{
+  margin-top: 7em;
+  background: url(http://vunature.com/wp-content/uploads/2016/11/lakes-france-scenery-nature-coast-wallpaper-pictures-download-1920x1080.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+}
+
+#fitness{
+  background: url(https://wallpaperscraft.com/image/bodybuilding_muscle_girl_fitness_104482_3840x2160.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+}
+
+#nutrition{
+  background: url(http://www.designsponge.com/wp-content/uploads/2014/08/JuliesKitchen_DS_wallpaper_pink_2560x1440.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+}
+
+#lifecoaching{
+  background: url(http://eskipaper.com/images/calm-ocean-waves-wallpaper-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+}
+
+#physicaltherapy{
+  background: url(http://cdn.wallpapersafari.com/45/19/YK2fDA.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+}
+
+#reformServices .bannertext,
+#fitness .bannertext,
+#nutrition .bannertext,
+#lifecoaching .bannertext,
+#physicaltherapy .bannertext
+{
+  left: 5%;
+  right: 5%;
+  text-shadow: 2px 2px #000;
+}
+
+#reformServices .bannertext h2,
+#fitness .bannertext h2,
+#nutrition .bannertext h2,
+#lifecoaching .bannertext h2,
+#physicaltherapy .bannertext h2{
+  font-size: 1.5em;
+}
+
+.partners{
+  margin: 1em;
+  padding: 1em;
+}
+
+.partners div{
+  display: inline-block;
+  text-align: center;
+}
+
+.partners div .thumbnail{
+  width: 30%;
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  padding: 1em;
+}
+
+.partners div .thumbnail .thumbimage{
+  width: 100%;
+}
+.partners div .thumbnail .thumbimage img{
+  width: 100%;
 }
