@@ -801,7 +801,6 @@ figure p {
 
 #reformServices .bannertext,
 #fitness .bannertext,
-#nutrition .bannertext,
 #lifecoaching .bannertext,
 #physicaltherapy .bannertext
 {
@@ -812,10 +811,25 @@ figure p {
 
 #reformServices .bannertext h2,
 #fitness .bannertext h2,
-#nutrition .bannertext h2,
 #lifecoaching .bannertext h2,
 #physicaltherapy .bannertext h2{
   font-size: 1.5em;
+}
+
+#nutrition .bannertext{
+  left: 5%;
+  right: 5%;
+  text-shadow: 2px 2px #000;
+}
+
+#nutrition .bannertext h1{
+  color: #D3D3D3;
+}
+
+#nutrition .bannertext h2{
+  font-size: 2em;
+  font-weight: bold;
+  color: #D3D3D3;
 }
 
 .partners{
@@ -826,19 +840,40 @@ figure p {
 .partners div{
   display: inline-block;
   text-align: center;
+  vertical-align: top;
 }
 
 .partners div .thumbnail{
-  width: 30%;
+  max-width: 30%;
+  min-width: 30%;
   background-color: #fff;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   padding: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .partners div .thumbnail .thumbimage{
   width: 100%;
+  height: 24vw;
+  overflow: hidden;
 }
 .partners div .thumbnail .thumbimage img{
+
+}
+
+.partners div .thumbnail .thumbcaption p{
+  text-align: justify;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.partners div #SimplyRawExpress .thumbimage{
+  background: url(http://ottawamagazine.com/wp-content/uploads/2012/09/WLPSept102-320x276.jpg) 50% 50% no-repeat;
   width: 100%;
+}
+
+.partners div #FarmBoy .thumbimage{
+  background: url(https://media.licdn.com/media/p/1/005/07d/183/300ab15.png) 50% 50% no-repeat;
 }
