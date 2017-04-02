@@ -1023,3 +1023,144 @@ figure p {
   background-position: top;
   position: relative;
 }
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/* Contact Page */
+
+#getintouch {
+  margin-top: 7em;
+  background: url(https://elevateyoga.ca/wp-content/uploads/2016/07/ba-contact.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+}
+
+#getintouch .bannertext{
+  left: 5%;
+  right: 5%;
+}
+
+.partners div #locationIcon .thumbimage{
+  background: url(http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/256/blue-home-icon.png) 50% 50% no-repeat;
+}
+
+.partners div #PhoneIcon .thumbimage{
+  background: url(http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/256/blue-address-book-icon.png) 50% 50% no-repeat;
+}
+
+.partners div #EmailIcon .thumbimage{
+  background: url(http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/256/blue-mail-open-icon.png) 50% 50% no-repeat;
+}
+
+.partners div #locationIcon .thumbcaption p,
+.partners div #PhoneIcon .thumbcaption p,
+.partners div #EmailIcon .thumbcaption p{
+  text-align: center;
+}
+
+.mapsection{
+    width: 98%;
+}
+
+.mapsection .mapcanvas{
+  width: 100%;
+  height: 25em;
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  padding: 1em;
+  margin: 1em;
+}
+
+.mapsection .mapcanvas iframe{
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.formsection{
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+
+.formsection .formcanvas{
+  width: 50%;
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  padding: 1em;
+  margin: auto;
+}
+
+/**** FEEDBACK CSS ***/
+.formsection *,
+.formsection *:before,
+.formsection *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.formsection .field {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.formsection h4{
+  text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 1.5em;
+}
+
+.formsection label {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  color: #3D3D3D;
+}
+
+.formsection input {
+  width: 90%;
+  padding: 0.5em 0.5em;
+  font-size: 1.2em;
+  border-radius: 3px;
+  border: 1px solid #D9D9D9;
+}
+
+.formsection textarea {
+  width: 90%;
+  height: 200px;
+  padding: 0.5em 0.5em;
+  font-size: 1.2em;
+  border-radius: 3px;
+  border: 1px solid #D9D9D9;
+}
+
+.formsection .success {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.formsection .error {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
