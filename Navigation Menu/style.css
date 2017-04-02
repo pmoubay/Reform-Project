@@ -502,10 +502,10 @@ header .social li, header .social a {
 /*Promobanner*/
 
 #promo1 {
-    background: url(http://www.asiqual.com/wp-content/uploads/2013/04/sunset-run.jpg);
+    background: url(http://robbreport.com/sites/default/files/images/articles/2016Apr/2036241//lagreefitness.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     position: relative;
 }
 
@@ -850,17 +850,13 @@ figure p {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   padding: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
+  margin: 1em;
 }
 
 .partners div .thumbnail .thumbimage{
   width: 100%;
   height: 24vw;
   overflow: hidden;
-}
-.partners div .thumbnail .thumbimage img{
-
 }
 
 .partners div .thumbnail .thumbcaption p{
@@ -876,4 +872,154 @@ figure p {
 
 .partners div #FarmBoy .thumbimage{
   background: url(https://media.licdn.com/media/p/1/005/07d/183/300ab15.png) 50% 50% no-repeat;
+}
+
+#lifecoachingdescription{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.partners h4{
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 1.5em;
+}
+
+.partners div #TestJohnny .thumbimage{
+  background: url(https://static.pexels.com/photos/91227/pexels-photo-91227.jpeg) 50% 50% no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.partners div #TestSam .thumbimage{
+  background: url(https://c1.staticflickr.com/8/7013/6563509303_a33afd6830_b.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.partners div #TestSammy .thumbimage{
+  background: url(http://img.autodni.ru/binaries/v3_auto/912961.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/* Programs Page */
+
+#MeetTheTeam{
+  margin-top: 7em;
+  background: url(https://cdn.shutterstock.com/shutterstock/videos/14395435/thumb/12.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+}
+
+#MeetTheIdea{
+  background: url(http://deanima.gr/wp-content/uploads/2016/11/idea.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+}
+
+#MeetTheProject{
+  background: url(http://il2.picdn.net/shutterstock/videos/1740046/thumb/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+}
+
+
+#MeetTheTeam .bannertext,
+#MeetTheIdea .bannertext,
+#MeetTheProject .bannertext{
+  left: 5%;
+  right: 5%;
+  text-shadow: 2px 2px #000;
+}
+
+
+#MeetTheTeam .bannertext h2,
+#MeetTheIdea .bannertext h2,
+#MeetTheProject .bannertext h2{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+
+.partners div #PascBio .thumbimage{
+  background: url(https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/11800630_10153075614847939_8839850423753793303_n.jpg?oh=983d0227f1bcd4b9468a6ef0576f1018&oe=59543ED8) 50% 50% no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.partners div #SueBio .thumbimage{
+  background: url(https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/78184_10151229265412487_470287752_o.jpg?oh=34e803025d8c4d6042dfb390a6e50378&oe=5962AEC8) 50% 50% no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.partners div #RayBio .thumbimage{
+  background: url(https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/13343044_10156989042310500_2108517709816389655_n.jpg?oh=f33db50e27e5c9d74a850d03889adf2f&oe=5960A2A6) 50% 50% no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.thumbnail span{
+  color: #fff;
+  visibility: hidden;
+  overflow: hidden;
+  height: 0;
+}
+
+.thumbnail ul{
+  text-align: center;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.thumbnail li{
+  list-style: none;
+}
+
+.partners div #FrontEnd .thumbimage{
+  background: url(https://www.kandasoft.com/wp-content/themes/pinboard/images/qa/front.png) 50% 50% no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.partners div #BackEnd .thumbimage{
+  background: url(http://cdn.skilledup.com/wp-content/uploads/2015/03/web-development-data-study-blue-Feature-1290x688-MS.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.partners div #SpecialTech .thumbimage{
+  background: url(http://unitone.co/beta/wp-content/uploads/2015/10/website_analytics_development_vector_design_mobile_computing_analysis_web_flat_icons_modern_business_chart_illustration_concept.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.partners div #Positives .thumbimage{
+  background: url(http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-space-icons-alphanumeric/071224-glossy-space-icon-alphanumeric-plus-sign-simple.png) 50% 50% no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.partners div #Negatives .thumbimage{
+  background: url(http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-space-icons-alphanumeric/071196-glossy-space-icon-alphanumeric-minus-sign-simple.png) 50% 50% no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+#Questions{
+  background: url(http://www.pixelstalk.net/wp-content/uploads/2016/08/Free-HD-Chalkboard-Photos-620x414.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
 }
